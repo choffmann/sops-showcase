@@ -1,9 +1,9 @@
 creation_rules:
   - path_regex: 'secrets/dev/(.*).yaml'
-    age: age15vnvhx4cx7pf086re4gcm6hdg5gc4cpw4942n943xw93gep32d2sx35yxf # dev age key
+    age: age1fcm7m3zekz38agqr2wyv62n5xuwhnyu4yq9unj3lftwervtq2d6qgc7auk # dev age key
 
   - path_regex: 'secrets/stage/(.*).yaml'
-    age: age15vnvhx4cx7pf086re4gcm6hdg5gc4cpw4942n943xw93gep32d2sx35yxf # stage age key
+    age: age1fcm7m3zekz38agqr2wyv62n5xuwhnyu4yq9unj3lftwervtq2d6qgc7auk # stage age key
 
   - path_regex: 'secrets/prod/(.*).yaml'
-    age: age15vnvhx4cx7pf086re4gcm6hdg5gc4cpw4942n943xw93gep32d2sx35yxf # prod age key
+    age: age1fcm7m3zekz38agqr2wyv62n5xuwhnyu4yq9unj3lftwervtq2d6qgc7auk # prod age key
