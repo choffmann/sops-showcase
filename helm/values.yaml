@@ -1,0 +1,6 @@
+database:
+  password: ""
+
+secrets:
+  auth_token: "" 
+  api_secret: ""
