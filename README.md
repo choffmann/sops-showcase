@@ -30,6 +30,13 @@ kubectl patch configmap argocd-cm -n argocd --patch "$(cat argocd-cm-patch.yaml)
 kubectl patch deployment argocd-repo-server -n argocd --patch "$(cat argocd-deployment-patch.yaml)"
 ```
 
+Oder ohne dieses Repository klonen zu müssen:
+
+```bash
+kubectl patch configmap argocd-cm -n argocd --patch "$(curl https://raw.githubusercontent.com/choffmann/sops-showcase/main/argocd-cm-patch.yaml)"
+kubectl patch deployment argocd-repo-server -n argocd --patch "$(curl https://raw.githubusercontent.com/choffmann/sops-showcase/main/argocd-deployment-patch.yaml)"
+```
+
 ## Wie verschlüssel ich ein Secret?
 Die verschiedene Anwendungsbeispiele für Kustomize und Helm werden im jeweiligen Unterordner [`helm`](https://github.com/choffmann/sops-showcase/tree/main/helm) oder [`kustomize`](https://github.com/choffmann/sops-showcase/tree/main/kustomize) beschrieben.
 
