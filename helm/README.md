@@ -59,3 +59,10 @@ helm secrets edit secrets/dev/values.enc.yaml
 
 Es öffnet sich ein Editor, in dem die Datei bearbeitet werden kann. Nach dem Speichern wird die Datei wieder verschlüsselt.
 
+## Helm Chart deployen ohne ArgoCD
+
+Mit `helm secrets` können die verschlüsselten Secrets auch ohne ArgoCD deployt werden. Dazu wird folgender Befehl verwendet:
+
+```bash
+helm secrets upgrade --install my-release . -f secrets/dev/values.enc.yaml -f values/dev.yaml
+```
