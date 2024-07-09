@@ -5,6 +5,7 @@ Hier wird die Verwendung von SOPS und Helm Secrets für ArgoCD beschrieben. Hier
 ## Voraussetzungen
 
 - [helm secrets](https://github.com/jkroepke/helm-secrets)
+- [sops](https://github.com/getsops/sops)
 - Public Key
 
 Damit `helm secrets` verwendet werden kann, muss das Plugin installiert werden. Dazu kann folgender Befehl verwendet werden:
