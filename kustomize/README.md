@@ -25,6 +25,8 @@ sops -e secret.yaml > secret.enc.yaml
 
 `secret.yaml` ist die unverschlüsselte Secret Datei aus Kubernetes und `secret.enc.yaml` ist das verschlüsselte Secret. Diese verschlüsselte Dateikann auch in einem Git Repository abgelegt werden. Wenn ArgoCD auf das Repository zugreift, wird das Secret automatisch entschlüsselt und in Kubernetes Secrets überführt.
 
+**NOTE:** Die Secrets werden trotzdem noch in `base64` angegeben, da hier lediglich die Secrets Datei von Kubernets verschlüsselt wird. 
+
 ## Kustomize Generator
 
 Damit ein Secret in ArgoCD entschlüsselt werden kann, muss in Kustomize ein Generator erstellt werden.
